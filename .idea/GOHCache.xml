@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GoORMHelperCache">
+    <option name="scannedPathMapping">
+      <map>
+        <entry key="file://$PROJECT_DIR$/controller/api_.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726566021368" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/controller/api_system_info_controller.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726566524346" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/controller/home.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726566002323" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/controller/home_index_controller.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726571555381" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/controller/web_socket_controller.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726574203560" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726571614041" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/route.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726566267125" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/route/route.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726573777261" />
+            </ScannedPath>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastTimeChecked" value="1726544086168" />
+  </component>
+</project>
