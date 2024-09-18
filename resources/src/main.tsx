@@ -6,7 +6,7 @@ import {BaseHome} from "./view/base_home.tsx";
 createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
         <Routes>
-            <Route path="/home" element={<BaseHome/>} />
+            <Route path="/home/*" element={<BaseHome/>} />
         </Routes>
     </BrowserRouter>
 )

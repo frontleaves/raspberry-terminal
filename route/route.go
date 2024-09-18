@@ -23,7 +23,10 @@ func Route(engine *gin.Engine, staticFS embed.FS) {
 	})
 
 	// WebSocket
-	engine.GET("/ws", controller.WsController)
+	wsGroup := engine.Group("/ws")
+	{
+		wsGroup.GET("/ping", controller.SocketPingController)
+	}
 
 	// 首页
 	homeGroup := engine.Group("/home")
