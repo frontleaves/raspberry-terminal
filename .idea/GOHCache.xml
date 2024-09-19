@@ -10,17 +10,17 @@
             </set>
           </value>
         </entry>
+        <entry key="WsSystemInfoDTO">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/model/dto/ws_system_info_dto.go" />
+            </set>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="scannedPathMapping">
       <map>
-        <entry key="file://$PROJECT_DIR$/controller/api_.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1726566021368" />
-            </ScannedPath>
-          </value>
-        </entry>
         <entry key="file://$PROJECT_DIR$/controller/api_system_info_controller.go">
           <value>
             <ScannedPath>
@@ -28,17 +28,17 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/controller/home.go">
+        <entry key="file://$PROJECT_DIR$/controller/socket_controller.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726566002323" />
+              <option name="lastModified" value="1726574203560" />
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/controller/home_index_controller.go">
+        <entry key="file://$PROJECT_DIR$/controller/socket_mqtt_controller.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726571555381" />
+              <option name="lastModified" value="1726678252043" />
             </ScannedPath>
           </value>
         </entry>
@@ -49,10 +49,10 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/controller/web_socket_controller.go">
+        <entry key="file://$PROJECT_DIR$/controller/socket_system_controller.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726574203560" />
+              <option name="lastModified" value="1726631064280" />
             </ScannedPath>
           </value>
         </entry>
@@ -75,17 +75,29 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/route.go">
+        <entry key="file://$PROJECT_DIR$/model/dto/ws_system_info_dto.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726566267125" />
+              <option name="lastModified" value="1726629412336" />
+              <option name="schema">
+                <list>
+                  <option value="WsSystemInfoDTO" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/route/route.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726589614188" />
+              <option name="lastModified" value="1726670054775" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/service/device_use_service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726629412312" />
             </ScannedPath>
           </value>
         </entry>
@@ -94,8 +106,9 @@
     <option name="tableStructMapping">
       <map>
         <entry key="ws_ping_dto" value="WsPingDTO" />
+        <entry key="ws_system_info_dto" value="WsSystemInfoDTO" />
       </map>
     </option>
-    <option name="lastTimeChecked" value="1726544086168" />
+    <option name="lastTimeChecked" value="1726667474364" />
   </component>
 </project>

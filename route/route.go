@@ -26,6 +26,8 @@ func Route(engine *gin.Engine, staticFS embed.FS) {
 	wsGroup := engine.Group("/ws")
 	{
 		wsGroup.GET("/ping", controller.SocketPingController)
+		wsGroup.GET("/system", controller.SocketSystemController)
+		wsGroup.GET("/mqtt", controller.SocketMqttController)
 	}
 
 	// 首页
