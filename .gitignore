@@ -3,3 +3,5 @@ yarn.lock
 package.json
 main
 dist/
+raspberry-terminal.db
+.logs/

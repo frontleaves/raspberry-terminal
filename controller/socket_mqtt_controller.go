@@ -15,9 +15,9 @@ import (
 var wsConn *websocket.Conn
 var mqttClient mqtt.Client
 
-func init() {
+func debug() {
 	// 初始化 MQTT 客户端
-	broker := "tcp://localhost:1883" // 替换为你的 MQTT 服务器地址
+	broker := "tcp://raspberrypi:1883" // 替换为你的 MQTT 服务器地址
 	topic := "test/topic"
 
 	opts := mqtt.NewClientOptions()

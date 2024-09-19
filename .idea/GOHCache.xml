@@ -3,6 +3,35 @@
   <component name="GoORMHelperCache">
     <option name="schemaMapping">
       <map>
+        <entry key="Device">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/model/entity/device_do.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="InitStr">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/config/init/initial.go" />
+              <option value="file://$PROJECT_DIR$/config/startup/initial.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="MqttAuthDTO">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/model/dto/mqtt_auth_dto.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="MqttAuthReturnDTO">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/model/dto/mqtt_auth_return_dto.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="WsPingDTO">
           <value>
             <set>
@@ -21,6 +50,58 @@
     </option>
     <option name="scannedPathMapping">
       <map>
+        <entry key="file://$PROJECT_DIR$/config/c/datasource_const.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726729098973" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/config/c/mqtt_const.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726737361749" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/config/init/datasource_initial.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726729260388" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/config/init/initial.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726729050028" />
+              <option name="schema">
+                <list>
+                  <option value="InitStr" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/config/startup/datasource_initial.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726729578077" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/config/startup/initial.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726731663509" />
+              <option name="schema">
+                <list>
+                  <option value="InitStr" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/controller/api_system_info_controller.go">
           <value>
             <ScannedPath>
@@ -38,7 +119,7 @@
         <entry key="file://$PROJECT_DIR$/controller/socket_mqtt_controller.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726678252043" />
+              <option name="lastModified" value="1726729713629" />
             </ScannedPath>
           </value>
         </entry>
@@ -59,7 +140,31 @@
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726571614041" />
+              <option name="lastModified" value="1726737688506" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/model/dto/mqtt_auth_dto.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726733024024" />
+              <option name="schema">
+                <list>
+                  <option value="MqttAuthDTO" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/model/dto/mqtt_auth_return_dto.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726738284249" />
+              <option name="schema">
+                <list>
+                  <option value="MqttAuthReturnDTO" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
@@ -87,6 +192,18 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/model/entity/device_do.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726731424659" />
+              <option name="schema">
+                <list>
+                  <option value="Device" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/route/route.go">
           <value>
             <ScannedPath>
@@ -101,10 +218,42 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/task/mqtt/get_device_active_operation_mqtt.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726728565080" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/task/mqtt/get_device_auth_mqtt.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726738217197" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/task/mqtt/mqtt_get_device_active_operation.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726728324773" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/task/mqtt/setup_mqtt.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726737927199" />
+            </ScannedPath>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="tableStructMapping">
       <map>
+        <entry key="device" value="Device" />
+        <entry key="init_str" value="InitStr" />
+        <entry key="mqtt_auth_dto" value="MqttAuthDTO" />
+        <entry key="mqtt_auth_return_dto" value="MqttAuthReturnDTO" />
         <entry key="ws_ping_dto" value="WsPingDTO" />
         <entry key="ws_system_info_dto" value="WsSystemInfoDTO" />
       </map>
