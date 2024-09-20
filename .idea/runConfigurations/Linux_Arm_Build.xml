@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Linux Arm Build" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="raspberry-terminal" />
+    <working_directory value="$PROJECT_DIR$" />
+    <envs>
+      <env name="GOOS" value="linux" />
+      <env name="GOARCH" value="arm64" />
+    </envs>
+    <kind value="PACKAGE" />
+    <package value="raspberry-terminal" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$" />
+    <output_directory value="$PROJECT_DIR$/dist" />
+    <option name="run" value="false" />
+    <method v="2" />
+  </configuration>
+</component>

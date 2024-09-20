@@ -19,7 +19,7 @@ func (i *InitStr) datasource() {
 	if err != nil {
 		blog.Panicf("INIT", "数据库连接失败：%v", err.Error())
 	}
-	err = db.AutoMigrate(&entity.Device{})
+	err = db.AutoMigrate(&entity.Device{}, &entity.Log{})
 	if err != nil {
 		blog.Panicf("INIT", "数据表创建(检查)失败： %v", err.Error())
 	}

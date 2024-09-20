@@ -33,16 +33,18 @@ type Device struct {
 	DeviceMac      string    `json:"device_mac" gorm:"type:varchar(255);not null"`
 	Authorized     bool      `json:"authorized" gorm:"type:boolean;not null;default:false"`
 	CreatedAt      time.Time `json:"created_at" gorm:"type:timestamp;not null;default:current_timestamp"`
+	Login          bool      `json:"login" gorm:"type:boolean;not null;default:false"`
+	NowValue       string    `json:"now_value" gorm:"type:json"`
 }
 
-func (device *Device) BeforeCreate(tx *gorm.DB) error {
+func (device *Device) BeforeCreate(_ *gorm.DB) error {
 	if device.UUID == uuid.Nil {
 		device.UUID = butil.GenerateUUID()
 	}
 	return nil
 }
 
-func (device *Device) BeforeUpdate(tx *gorm.DB) error {
+func (device *Device) BeforeUpdate(_ *gorm.DB) error {
 	device.CreatedAt = time.Now()
 	return nil
 }
