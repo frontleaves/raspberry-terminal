@@ -1,0 +1,60 @@
+project_name: dormitory-management
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - id: linux_amd64
+    binary: dormitory-management
+    main: .
+    env:
+      - CGO_ENABLED=1
+      - CC=x86_64-linux-gnu-gcc   # 为 x86_64 (amd64) 架构指定 GCC 编译器
+      - CXX=x86_64-linux-gnu-g++  # 为 x86_64 (amd64) 架构指定 G++ 编译器
+    goos:
+      - linux
+    goarch:
+      - amd64
+
+  - id: linux_arm64
+    binary: dormitory-management
+    main: .
+    env:
+      - CGO_ENABLED=1
+      - CC=aarch64-linux-gnu-gcc   # 为 ARM64 架构指定 GCC 编译器
+      - CXX=aarch64-linux-gnu-g++  # 为 ARM64 架构指定 G++ 编译器
+    goos:
+      - linux
+    goarch:
+      - arm64
+
+  - id: windows_amd64
+    binary: dormitory-management
+    main: .
+    env:
+      - CGO_ENABLED=1
+      - CC=x86_64-w64-mingw32-gcc   # 为 x86_64 (amd64) 架构指定 GCC 编译器
+      - CXX=x86_64-w64-mingw32-g++  # 为 x86_64 (amd64) 架构指定 G++ 编译器
+    goos:
+      - windows
+    goarch:
+      - amd64
+
+checksum:
+  name_template: "checksums.txt"
+
+archives:
+  - format_overrides:
+      - goos: windows
+        format: binary
+      - goos: linux
+        format: binary
+
+changelog:
+  use: "git"          # 使用 Git 自动生成变更日志
+  sort: "asc"         # 按提交时间升序排列
+  filters:
+    exclude:
+      - '^docs:'      # 过滤掉以 'docs:' 开头的提交
+      - '^test:'      # 过滤掉以 'test:' 开头的提交

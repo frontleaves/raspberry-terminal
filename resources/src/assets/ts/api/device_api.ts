@@ -3,6 +3,7 @@ import {BaseResponse} from "../model/base_response.ts";
 import {CustomPageDTO} from "../model/dto/custom_page_dto.ts";
 import {DeviceEntity} from "../model/entity/device_entity.ts";
 import {DeviceControlLightDTO} from "../model/dto/device_control_light_dto.ts";
+import {DeviceRegisterDTO} from "../model/dto/device_register_dto.ts";
 
 /**
  * # 在线设备列表
@@ -93,10 +94,28 @@ const DeviceLightControlAPI = async (bodyData: DeviceControlLightDTO): Promise<B
     )
 }
 
+/**
+ * # 设备注册
+ * 设备注册，用于设备注册；
+ *
+ * @constructor
+ */
+const DeviceRegisterAPI = async (bodyData: DeviceRegisterDTO): Promise<BaseResponse<void> | undefined> => {
+    return BaseApi<void>(
+        MethodType.POST,
+        "/api/v1/device/register",
+        bodyData,
+        null,
+        null,
+        null,
+    )
+}
+
 export {
     GetOnlineDeviceAPI,
     GetOfflineDeviceAPI,
     GetDeviceAPI,
     GetNoRegisterDeviceAPI,
-    DeviceLightControlAPI
+    DeviceLightControlAPI,
+    DeviceRegisterAPI
 }

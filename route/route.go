@@ -36,7 +36,8 @@ func Route(engine *gin.Engine, staticFS embed.FS) {
 	{
 		wsGroup.GET("/ping", controller.SocketPingController)
 		wsGroup.GET("/system", controller.SocketSystemController)
-		wsGroup.GET("/device", controller.SocketOnlineStatusController)
+		wsGroup.GET("/device", controller.SocketDeviceController)
+		wsGroup.GET("/no-reg-device", controller.SocketNoRegDeviceController)
 	}
 
 	// 首页

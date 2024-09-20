@@ -12,7 +12,15 @@ import (
 	"time"
 )
 
-func SocketOnlineStatusController(c *gin.Context) {
+// SocketDeviceController
+//
+// # WebSocket 设备信息
+//
+// 用于 WebSocket 实时获取设备信息。
+//
+// # 请求
+//   - c: gin.Context Gin 上下文
+func SocketDeviceController(c *gin.Context) {
 	conn, err := upgrade.Upgrade(c.Writer, c.Request, nil)
 	if err != nil {
 		_ = c.Error(berror.New(bcode.BadRequestInvalidInput, "升级为 WebSocket 失败"))
@@ -26,6 +34,8 @@ func SocketOnlineStatusController(c *gin.Context) {
 			return
 		}
 	}(conn)
+
+	startTime := time.Now()
 
 	for {
 		time.Sleep(5 * time.Second)
@@ -41,6 +51,17 @@ func SocketOnlineStatusController(c *gin.Context) {
 		err = conn.WriteMessage(websocket.TextMessage, marshal)
 		if err != nil {
 			break
+		}
+		_, message, err := conn.ReadMessage()
+		if err != nil {
+			break
+		}
+		if string(message) == "pong" {
+			startTime = time.Now()
+		} else {
+			if time.Now().Sub(startTime) > 10*time.Second {
+				return
+			}
 		}
 	}
 }

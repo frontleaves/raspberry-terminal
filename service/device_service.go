@@ -63,7 +63,6 @@ func DeviceGet(getVO vo.CustomPageVO) (drives *[]entity.Device) {
 	} else {
 		c.DB.Find(&getDrive, "authorized = ?", true).Where("device_name LIKE ?", "%"+getVO.Search+"%")
 	}
-	blog.Tracef("SERV", "\t> 取得数据：%v", getDrive)
 	if len(*getDrive) == 0 {
 		return new([]entity.Device)
 	}

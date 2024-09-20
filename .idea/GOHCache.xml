@@ -159,10 +159,24 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/controller/socket_device_controller.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726844623322" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/controller/socket_mqtt_controller.go">
           <value>
             <ScannedPath>
               <option name="lastModified" value="1726729713629" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/controller/socket_no_reg_device_controller.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726844339035" />
             </ScannedPath>
           </value>
         </entry>
@@ -190,7 +204,7 @@
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726795759184" />
+              <option name="lastModified" value="1726846912174" />
             </ScannedPath>
           </value>
         </entry>
@@ -329,14 +343,14 @@
         <entry key="file://$PROJECT_DIR$/route/route.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726839907595" />
+              <option name="lastModified" value="1726844535677" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/service/device_service.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726831797782" />
+              <option name="lastModified" value="1726843560867" />
             </ScannedPath>
           </value>
         </entry>
