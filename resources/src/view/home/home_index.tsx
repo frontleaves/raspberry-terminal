@@ -14,7 +14,6 @@ export const HomeIndex = () => {
         ram: 0,
         disk: 0,
     } as WsSystemInfoDTO);
-    const [demoData, setDemoData] = useState<string>("未知");
 
     const wsPing = useRef<WebSocket | null>(null);
     const wsSystemInfo = useRef<WebSocket | null>(null);
@@ -68,22 +67,6 @@ export const HomeIndex = () => {
     }, []);
 
     useEffect(() => {
-        wsSystemInfo.current = new WebSocket(`ws://${window.location.host}/ws/mqtt`);
-        wsSystemInfo.current.onopen = () => {
-            console.log('WebSocket 连接已建立');
-        };
-        wsSystemInfo.current.onclose = () => {
-            console.log('WebSocket 连接已关闭');
-        };
-        wsSystemInfo.current.onerror = (error) => {
-            console.error('WebSocket 错误: ', error);
-        };
-        wsSystemInfo.current.onmessage = (event) => {
-            setDemoData(event.data);
-        };
-    })
-
-    useEffect(() => {
         if (!hasConnect) {
             // 使用 react-router-dom 进行页面导航
             setRefresh(setInterval(() => {
@@ -129,7 +112,7 @@ export const HomeIndex = () => {
                     <div><NowTime/></div>
                 </div>
                 <div className={"bg-white shadow-lg p-3 rounded-lg grid items-center justify-center w-full"}>
-                    <div>{demoData}</div>
+                    <div>Demo</div>
                 </div>
             </div>
             <div className={"bg-white shadow-lg p-3 rounded-lg grid items-center col-span-6 space-y-1"}>
@@ -139,42 +122,50 @@ export const HomeIndex = () => {
                     <div
                         role="progressbar"
                         aria-labelledby="ProgressLabel"
-                        aria-valuenow={50}
+                        aria-valuenow={systemInfo.cpu} // 动态绑定数值
                         className="rounded-full bg-gray-200 w-full"
                     >
-                        <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4"
-                              style={{width: `${systemInfo.cpu}%`}}>
-                          <span className="font-bold text-white">{systemInfo.cpu}%</span>
+                        <span
+                            className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 font-bold text-white transition-all duration-500 ease-out"  // 添加 transition 和 duration
+                            style={{width: `${systemInfo.cpu}%`}}
+                        >
+                            {systemInfo.cpu}%
                         </span>
                     </div>
                 </div>
+
                 <div className={"grid"}>
                     <div className={"text-[10px]/4 font-thin"}>内存占用率</div>
                     <span id="ProgressLabel" className="sr-only">Loading</span>
                     <div
                         role="progressbar"
                         aria-labelledby="ProgressLabel"
-                        aria-valuenow={50}
+                        aria-valuenow={systemInfo.ram} // 动态绑定数值
                         className="rounded-full bg-gray-200 w-full"
                     >
-                        <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4"
-                              style={{width: `${systemInfo.ram}%`}}>
-                          <span className="font-bold text-white">{systemInfo.ram}%</span>
+                        <span
+                            className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 font-bold text-white transition-all duration-500 ease-out"
+                            style={{width: `${systemInfo.ram}%`}}
+                        >
+                            {systemInfo.ram}%
                         </span>
                     </div>
                 </div>
+
                 <div className={"grid"}>
                     <div className={"text-[10px]/4 font-thin"}>存储占用率</div>
                     <span id="ProgressLabel" className="sr-only">Loading</span>
                     <div
                         role="progressbar"
                         aria-labelledby="ProgressLabel"
-                        aria-valuenow={50}
+                        aria-valuenow={systemInfo.disk} // 动态绑定数值
                         className="rounded-full bg-gray-200 w-full"
                     >
-                        <span className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4"
-                              style={{width: `${systemInfo.disk}%`}}>
-                          <span className="font-bold text-white">{systemInfo.disk}%</span>
+                        <span
+                            className="block h-4 rounded-full bg-indigo-600 text-center text-[10px]/4 font-bold text-white transition-all duration-500 ease-out"
+                            style={{width: `${systemInfo.disk}%`}}
+                        >
+                            {systemInfo.disk}%
                         </span>
                     </div>
                 </div>

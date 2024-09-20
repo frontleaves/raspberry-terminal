@@ -166,6 +166,13 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/controller/socket_online_status_controller.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726839661478" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/controller/socket_ping_controller.go">
           <value>
             <ScannedPath>
@@ -322,7 +329,7 @@
         <entry key="file://$PROJECT_DIR$/route/route.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726831897712" />
+              <option name="lastModified" value="1726839907595" />
             </ScannedPath>
           </value>
         </entry>
@@ -337,6 +344,13 @@
           <value>
             <ScannedPath>
               <option name="lastModified" value="1726629412312" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/service/socket_service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726839661502" />
             </ScannedPath>
           </value>
         </entry>

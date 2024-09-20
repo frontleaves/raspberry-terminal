@@ -36,6 +36,7 @@ func Route(engine *gin.Engine, staticFS embed.FS) {
 	{
 		wsGroup.GET("/ping", controller.SocketPingController)
 		wsGroup.GET("/system", controller.SocketSystemController)
+		wsGroup.GET("/device", controller.SocketOnlineStatusController)
 	}
 
 	// 首页
@@ -59,7 +60,7 @@ func Route(engine *gin.Engine, staticFS embed.FS) {
 			deviceListGroup := deviceGroup.Group("/list")
 			{
 				deviceListGroup.GET("/no-register", controller.ApiGetNoRegisterDeviceController)
-				deviceListGroup.GET("/list", controller.ApiGetDeviceController)
+				deviceListGroup.GET("/", controller.ApiGetDeviceController)
 				deviceListGroup.GET("/online", controller.ApiGetOnlineDeviceController)
 				deviceListGroup.GET("/offline", controller.ApiGetOfflineDeviceController)
 			}
