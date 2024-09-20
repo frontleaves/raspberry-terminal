@@ -11,6 +11,7 @@ const (
 	TopicOperate       = "topic/operate"
 	TopicOperateReturn = "topic/operate-return"
 	TopicPing          = "topic/ping"
+	TopicPong          = "topic/pong"
 )
 
 var (

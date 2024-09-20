@@ -25,8 +25,8 @@ func SetupMQTT() {
 	}()
 
 	go func() {
+		getDevicePong()
 		getDeviceActiveOperation()
 		getDeviceAuth()
-		getDevicePong()
 	}()
 }
