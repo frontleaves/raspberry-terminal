@@ -45,6 +45,20 @@
             </set>
           </value>
         </entry>
+        <entry key="MqttDevicePongDTO">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/model/dto/mqtt_device_pong_dto.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Runtime">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/task/runtime/setup_runtime.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="WsPingDTO">
           <value>
             <set>
@@ -73,7 +87,7 @@
         <entry key="file://$PROJECT_DIR$/config/c/mqtt_const.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726792821375" />
+              <option name="lastModified" value="1726795506198" />
             </ScannedPath>
           </value>
         </entry>
@@ -134,7 +148,7 @@
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726737688506" />
+              <option name="lastModified" value="1726795759184" />
             </ScannedPath>
           </value>
         </entry>
@@ -174,6 +188,18 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/model/dto/mqtt_device_pong_dto.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726796306649" />
+              <option name="schema">
+                <list>
+                  <option value="MqttDevicePongDTO" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/model/dto/ws_ping_dto.go">
           <value>
             <ScannedPath>
@@ -201,7 +227,7 @@
         <entry key="file://$PROJECT_DIR$/model/entity/device_do.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726793697523" />
+              <option name="lastModified" value="1726795255692" />
               <option name="schema">
                 <list>
                   <option value="Device" />
@@ -239,28 +265,61 @@
         <entry key="file://$PROJECT_DIR$/task/mqtt/get_device_active_operation_mqtt.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726793269979" />
+              <option name="lastModified" value="1726796157003" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/task/mqtt/get_device_auth_mqtt.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726738217197" />
+              <option name="lastModified" value="1726798818681" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/task/mqtt/get_device_pong.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726795970336" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/task/mqtt/get_device_pong_mqtt.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726798603518" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/task/mqtt/setup_mqtt.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726737927199" />
+              <option name="lastModified" value="1726796130983" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/task/runtime/device_uptime_check_runtime.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726795224035" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/task/runtime/post_device_ping_runtime.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726793442940" />
+              <option name="lastModified" value="1726798574648" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/task/runtime/setup_runtime.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726795066892" />
+              <option name="schema">
+                <list>
+                  <option value="Runtime" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
@@ -274,6 +333,8 @@
         <entry key="mqtt_auth_dto" value="MqttAuthDTO" />
         <entry key="mqtt_auth_return_dto" value="MqttAuthReturnDTO" />
         <entry key="mqtt_device_operate_dto" value="MqttDeviceOperateDTO" />
+        <entry key="mqtt_device_pong_dto" value="MqttDevicePongDTO" />
+        <entry key="runtime" value="Runtime" />
         <entry key="ws_ping_dto" value="WsPingDTO" />
         <entry key="ws_system_info_dto" value="WsSystemInfoDTO" />
       </map>

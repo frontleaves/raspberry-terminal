@@ -10,6 +10,7 @@ const (
 	TopicAuthReturn    = "topic/auth-return"
 	TopicOperate       = "topic/operate"
 	TopicOperateReturn = "topic/operate-return"
+	TopicPing          = "topic/ping"
 )
 
 var (

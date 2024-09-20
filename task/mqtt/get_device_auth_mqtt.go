@@ -70,6 +70,9 @@ func getDeviceAuth() {
 							authReturnDTO.Authorized = false
 						}
 					}
+					device.Login = true
+					device.Uptime = time.Now()
+					c.DB.Save(&device)
 					marshal, err := json.Marshal(authReturnDTO)
 					if err == nil {
 						c.MqttClient.Publish(c.TopicAuthReturn, 0, false, marshal)

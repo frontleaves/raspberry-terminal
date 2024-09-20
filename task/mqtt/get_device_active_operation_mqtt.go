@@ -8,6 +8,7 @@ import (
 	"raspberry-terminal/config/c"
 	"raspberry-terminal/model/dto"
 	"raspberry-terminal/model/entity"
+	"time"
 )
 
 // getDeviceActiveOperation
@@ -51,4 +52,6 @@ func getDeviceActiveOperation() {
 	if token.Wait() && token.Error() != nil {
 		blog.Fatalf("MQTT", "MQTT 订阅失败：%v", token.Error())
 	}
+
+	time.Sleep(time.Second)
 }

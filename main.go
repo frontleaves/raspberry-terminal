@@ -21,10 +21,8 @@ func main() {
 	// 系统初始化
 	startup.Initial()
 
-	// 启动 MQTT 服务
-	go func() {
-		mqtt.SetupMQTT()
-	}()
+	// 启动 MQTT 服务(内含定时任务)
+	mqtt.SetupMQTT()
 
 	// 路由
 	route.Route(engine, staticFS)

@@ -4,6 +4,7 @@ import (
 	"github.com/XiaoLFeng/go-gin-util/blog"
 	mqtt "github.com/eclipse/paho.mqtt.golang"
 	"raspberry-terminal/config/c"
+	"raspberry-terminal/task/runtime"
 )
 
 // SetupMQTT
@@ -19,6 +20,13 @@ func SetupMQTT() {
 	}
 	blog.Info("MQTT", "连接成功")
 
-	getDeviceActiveOperation()
-	getDeviceAuth()
+	go func() {
+		runtime.SetupRuntime()
+	}()
+
+	go func() {
+		getDeviceActiveOperation()
+		getDeviceAuth()
+		getDevicePong()
+	}()
 }

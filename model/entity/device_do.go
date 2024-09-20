@@ -33,6 +33,7 @@ type Device struct {
 	DeviceMac      string    `json:"device_mac" gorm:"type:varchar(255);not null"`
 	Authorized     bool      `json:"authorized" gorm:"type:boolean;not null;default:false"`
 	CreatedAt      time.Time `json:"created_at" gorm:"type:timestamp;not null;default:current_timestamp"`
+	Uptime         time.Time `json:"uptime" gorm:"type:timestamp;not null;default:current_timestamp"`
 	Login          bool      `json:"login" gorm:"type:boolean;not null;default:false"`
 	NowValue       string    `json:"now_value" gorm:"type:json"`
 }
