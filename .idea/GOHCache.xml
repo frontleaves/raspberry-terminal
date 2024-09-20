@@ -17,6 +17,20 @@
             </set>
           </value>
         </entry>
+        <entry key="DeviceLightVO">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/model/vo/device_light_vo.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="DeviceRegisterVO">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/model/vo/device_register_vo.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="InitStr">
           <value>
             <set>
@@ -120,7 +134,7 @@
         <entry key="file://$PROJECT_DIR$/controller/api_device_controller.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726820929136" />
+              <option name="lastModified" value="1726831797787" />
             </ScannedPath>
           </value>
         </entry>
@@ -200,7 +214,7 @@
         <entry key="file://$PROJECT_DIR$/model/dto/mqtt_device_operate_dto.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726791967772" />
+              <option name="lastModified" value="1726830804274" />
               <option name="schema">
                 <list>
                   <option value="MqttDeviceOperateDTO" />
@@ -260,7 +274,7 @@
         <entry key="file://$PROJECT_DIR$/model/entity/log_do.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726793697519" />
+              <option name="lastModified" value="1726830696431" />
               <option name="schema">
                 <list>
                   <option value="Log" />
@@ -281,17 +295,41 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/model/vo/device_light_vo.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726830466287" />
+              <option name="schema">
+                <list>
+                  <option value="DeviceLightVO" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/model/vo/device_register_vo.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726829200744" />
+              <option name="schema">
+                <list>
+                  <option value="DeviceRegisterVO" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/route/route.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726816474615" />
+              <option name="lastModified" value="1726831897712" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/service/device_service.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726821135894" />
+              <option name="lastModified" value="1726831797782" />
             </ScannedPath>
           </value>
         </entry>
@@ -305,7 +343,7 @@
         <entry key="file://$PROJECT_DIR$/task/mqtt/get_device_active_operation_mqtt.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726811686004" />
+              <option name="lastModified" value="1726830804256" />
             </ScannedPath>
           </value>
         </entry>
@@ -340,7 +378,7 @@
         <entry key="file://$PROJECT_DIR$/task/runtime/device_uptime_check_runtime.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726795224035" />
+              <option name="lastModified" value="1726832781956" />
             </ScannedPath>
           </value>
         </entry>
@@ -369,6 +407,8 @@
       <map>
         <entry key="custom_page_vo" value="CustomPageVO" />
         <entry key="device" value="Device" />
+        <entry key="device_light_vo" value="DeviceLightVO" />
+        <entry key="device_register_vo" value="DeviceRegisterVO" />
         <entry key="init_str" value="InitStr" />
         <entry key="log" value="Log" />
         <entry key="mqtt_auth_dto" value="MqttAuthDTO" />

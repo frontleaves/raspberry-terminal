@@ -18,8 +18,8 @@ func (r *Runtime) DeviceUptimeCheck() {
 		var getAllDevice *[]entity.Device
 		c.DB.Find(&getAllDevice)
 		for _, device := range *getAllDevice {
-			// 如果 Uptime 多于 30s 设定为下线
-			if time.Now().Sub(device.Uptime).Seconds() > 30 {
+			// 如果 Uptime 多于 15s 设定为下线
+			if time.Now().Sub(device.Uptime).Seconds() > 15 {
 				device.Login = false
 				c.DB.Save(&device)
 			}

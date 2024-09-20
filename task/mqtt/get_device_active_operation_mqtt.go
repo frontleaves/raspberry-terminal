@@ -34,7 +34,7 @@ func getDeviceActiveOperation() {
 			return
 		}
 		// 保存设备主动操控信息
-		marshal, err := json.Marshal(unmarshal.Data)
+		marshal, err := json.Marshal(unmarshal)
 		if err != nil {
 			blog.Warnf("MQTT", "消息序列化失败：%v", err.Error())
 		}
@@ -44,7 +44,7 @@ func getDeviceActiveOperation() {
 		// 保存日志信息
 		c.DB.Create(&entity.Log{
 			Operate: "DRIVING",
-			LogUUID: device.UUID,
+			UUID:    device.UUID,
 			Content: device.DeviceUsername + ":" + unmarshal.Device,
 		})
 	})

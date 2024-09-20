@@ -12,6 +12,5 @@ package dto
 //   - Data: interface{}, 操作数据
 type MqttDeviceOperateDTO struct {
 	Device string      `json:"device"`
-	Type   string      `json:"type"`
-	Data   interface{} `json:"data"`
+	Value  interface{} `json:"value"`
 }

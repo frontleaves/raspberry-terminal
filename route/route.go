@@ -55,8 +55,18 @@ func Route(engine *gin.Engine, staticFS embed.FS) {
 		// 设备
 		deviceGroup := apiGroup.Group("/device")
 		{
-			deviceGroup.GET("/no-register", controller.ApiGetNoRegisterDeviceController)
-			deviceGroup.GET("/list", controller.ApiGetDeviceController)
+			deviceGroup.POST("/register", controller.ApiRegisterDeviceController)
+			deviceListGroup := deviceGroup.Group("/list")
+			{
+				deviceListGroup.GET("/no-register", controller.ApiGetNoRegisterDeviceController)
+				deviceListGroup.GET("/list", controller.ApiGetDeviceController)
+				deviceListGroup.GET("/online", controller.ApiGetOnlineDeviceController)
+				deviceListGroup.GET("/offline", controller.ApiGetOfflineDeviceController)
+			}
+			deviceControlGroup := deviceGroup.Group("/control")
+			{
+				deviceControlGroup.POST("/light", controller.ApiDeviceLightController)
+			}
 		}
 		// 系统
 		systemGroup := apiGroup.Group("/system")

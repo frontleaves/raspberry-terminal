@@ -30,8 +30,5 @@ func (log *Log) BeforeCreate(_ *gorm.DB) error {
 	if log.LogUUID == uuid.Nil {
 		log.LogUUID = butil.GenerateUUID()
 	}
-	if log.CreatedAt.IsZero() {
-		log.CreatedAt = time.Now()
-	}
 	return nil
 }
