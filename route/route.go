@@ -9,6 +9,15 @@ import (
 	"raspberry-terminal/controller"
 )
 
+// Route
+//
+// # 路由
+//
+// 路由配置，用于配置路由。
+//
+// # 参数
+//   - engine: *gin.Engine Gin 引擎
+//   - staticFS: embed.FS 静态资源文件系统
 func Route(engine *gin.Engine, staticFS embed.FS) {
 	// 引入 Handler
 	engine.Use(bmiddle.CrossDomainClearingMiddleware())
@@ -42,6 +51,14 @@ func Route(engine *gin.Engine, staticFS embed.FS) {
 	apiGroup := engine.Group("/api/v1")
 	{
 		apiGroup.Use(bmiddle.ReturnResultMiddleware())
+
+		// 设备
+		deviceGroup := apiGroup.Group("/device")
+		{
+			deviceGroup.GET("/no-register", controller.ApiGetNoRegisterDeviceController)
+			deviceGroup.GET("/list", controller.ApiGetDeviceController)
+		}
+		// 系统
 		systemGroup := apiGroup.Group("/system")
 		{
 			systemGroup.GET("/info", controller.ApiSystemInfoController)

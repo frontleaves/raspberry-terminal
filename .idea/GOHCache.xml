@@ -3,6 +3,13 @@
   <component name="GoORMHelperCache">
     <option name="schemaMapping">
       <map>
+        <entry key="CustomPageVO">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/model/vo/custom_page_vo.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="Device">
           <value>
             <set>
@@ -110,6 +117,20 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/controller/api_device_controller.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726820929136" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/controller/api_system_controller.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726814852835" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/controller/api_system_info_controller.go">
           <value>
             <ScannedPath>
@@ -120,7 +141,7 @@
         <entry key="file://$PROJECT_DIR$/controller/socket_controller.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726574203560" />
+              <option name="lastModified" value="1726814773514" />
             </ScannedPath>
           </value>
         </entry>
@@ -248,10 +269,29 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/model/vo/custom_page_vo.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726821030804" />
+              <option name="schema">
+                <list>
+                  <option value="CustomPageVO" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/route/route.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726811135758" />
+              <option name="lastModified" value="1726816474615" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/service/device_service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1726821135894" />
             </ScannedPath>
           </value>
         </entry>
@@ -272,7 +312,7 @@
         <entry key="file://$PROJECT_DIR$/task/mqtt/get_device_auth_mqtt.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1726798818681" />
+              <option name="lastModified" value="1726820074374" />
             </ScannedPath>
           </value>
         </entry>
@@ -327,6 +367,7 @@
     </option>
     <option name="tableStructMapping">
       <map>
+        <entry key="custom_page_vo" value="CustomPageVO" />
         <entry key="device" value="Device" />
         <entry key="init_str" value="InitStr" />
         <entry key="log" value="Log" />
